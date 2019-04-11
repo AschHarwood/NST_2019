@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS=false; L_NO_TOUCH=false; L_DISABLE_3D=false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.4.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.4.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+    <meta name="viewport" content="width=device-width,
+        initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <style>#map_4cb9bae55b994e08a841e4cc2840c628 {
+        position: relative;
+        width: 100.0%;
+        height: 100.0%;
+        left: 0.0%;
+        top: 0.0%;
+        }
+    </style>
+</head>
+<body>    
+    
+    <div class="folium-map" id="map_4cb9bae55b994e08a841e4cc2840c628" ></div>
+</body>
+<script>    
+    
+    
+        var bounds = null;
+    
+
+    var map_4cb9bae55b994e08a841e4cc2840c628 = L.map(
+        'map_4cb9bae55b994e08a841e4cc2840c628', {
+        center: [7.17, 8.83],
+        zoom: 5,
+        maxBounds: bounds,
+        layers: [],
+        worldCopyJump: false,
+        crs: L.CRS.EPSG3857,
+        zoomControl: true,
+        });
+L.control.scale().addTo(map_4cb9bae55b994e08a841e4cc2840c628);
+
+    
+    var tile_layer_05dd01374651493e97175487394b30a6 = L.tileLayer(
+        'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+        {
+        "attribution": null,
+        "detectRetina": false,
+        "maxNativeZoom": 18,
+        "maxZoom": 18,
+        "minZoom": 0,
+        "noWrap": false,
+        "opacity": 1,
+        "subdomains": "abc",
+        "tms": false
+}).addTo(map_4cb9bae55b994e08a841e4cc2840c628);
+    
+        var geo_json_733f94e779cf404d939c69b212068fca = L.geoJson(
+            {"bbox": [4.81394, 3.344599962, 13.378932, 14.21105957], "features": [{"bbox": [8.9062309, 7.189050198, 8.9062309, 7.189050198], "geometry": {"coordinates": [8.9062309, 7.189050198], "type": "Point"}, "id": "0", "properties": {"Total Deaths": 0.0, "full place name": ", Federal Capital Territory, Nigeria", "highlight": {}, "style": {}}, "type": "Feature"}, {"bbox": [5.0864501, 7.348649978999999, 5.0864501, 7.348649978999999], "geometry": {"coordinates": [5.0864501, 7.348649978999999], "type": "Point"}, "id": "1", "properties": {"Total Deaths": 0.0, "full place name": "Aba South, Abia, Nigeria", "highlight": {}, "style": {}}, "type": "Feature"}, {"bbox": [7.15663, 3.344599962, 7.15663, 3.344599962], "geometry": {"coordinates": [7.15663, 3.344599962], "type": "Point"}, "id": "2", "properties": {"Total Deaths": 0.0, "full place name": "Abeokuta South, Ogun, Nigeria", "highlight": {}, "style": {}}, "type": "Feature"}, {"bbox": [7.5393300000000005, 5.768970013, 7.5393300000000005, 5.768970013], "geometry": {"coordinates": [7.5393300000000005, 5.768970013], "type": "Point"}, "id": "3", "properties": {"Total Deaths": 0.0, "full place name": "Akoko North-East, Ondo, Nigeria", "highlight": {}, "style": {}}, "type": "Feature"}, {"bbox": [13.378932, 12.4877, 13.378932, 12.4877], "geometry": {"coordinates": [13.378932, 12.4877], "type": "Point"}, "id": "4", "properties": {"Total Deaths": 12.0, "full place name": "Chetima Wanou, Niger", "highlight": {}, "style": {}}, "type": "Feature"}, {"bbox": [7.7375798, 5.717649937, 7.7375798, 5.717649937], "geometry": {"coordinates": [7.7375798, 5.717649937], "type": "Point"}, "id": "5", "properties": {"Total Deaths": 0.0, "full place name": "Ekiti East, Ekiti, Nigeria", "highlight": {}, "style": {}}, "type": "Feature"}, {"bbox": [12.17357, 6.666820049, 12.17357, 6.666820049], "geometry": {"coordinates": [12.17357, 6.666820049], "type": "Point"}, "id": "6", "properties": {"Total Deaths": 2.0, "full place name": "Gusau, Zamfara, Nigeria", "highlight": {}, "style": {}}, "type": "Feature"}, {"bbox": [11.98325, 8.505299568, 11.98325, 8.505299568], "geometry": {"coordinates": [11.98325, 8.505299568], "type": "Point"}, "id": "7", "properties": {"Total Deaths": 0.0, "full place name": "Gwale, Kano, Nigeria", "highlight": {}, "style": {}}, "type": "Feature"}, {"bbox": [5.12218, 6.901830196, 5.12218, 6.901830196], "geometry": {"coordinates": [5.12218, 6.901830196], "type": "Point"}, "id": "8", "properties": {"Total Deaths": 2.0, "full place name": "Ikwerre, Rivers, Nigeria", "highlight": {}, "style": {}}, "type": "Feature"}, {"bbox": [6.4310002, 7.8157801629999994, 6.4310002, 7.8157801629999994], "geometry": {"coordinates": [6.4310002, 7.8157801629999994], "type": "Point"}, "id": "9", "properties": {"Total Deaths": 1.0, "full place name": "Ishielu, Ebonyi, Nigeria", "highlight": {}, "style": {}}, "type": "Feature"}, {"bbox": [7.637750099999999, 4.180840015, 7.637750099999999, 4.180840015], "geometry": {"coordinates": [7.637750099999999, 4.180840015], "type": "Point"}, "id": "10", "properties": {"Total Deaths": 0.0, "full place name": "Iwo, Osun, Nigeria", "highlight": {}, "style": {}}, "type": "Feature"}, {"bbox": [13.098930000000001, 7.229129791, 13.098930000000001, 7.229129791], "geometry": {"coordinates": [13.098930000000001, 7.229129791], "type": "Point"}, "id": "11", "properties": {"Total Deaths": 5.0, "full place name": "Jibia, Katsina, Nigeria", "highlight": {}, "style": {}}, "type": "Feature"}, {"bbox": [10.33456, 7.711569786000001, 10.33456, 7.711569786000001], "geometry": {"coordinates": [10.33456, 7.711569786000001], "type": "Point"}, "id": "12", "properties": {"Total Deaths": 130.0, "full place name": "Kajuru, Kaduna, Nigeria", "highlight": {}, "style": {}}, "type": "Feature"}, {"bbox": [7.5036998, 9.347680092, 7.5036998, 9.347680092], "geometry": {"coordinates": [7.5036998, 9.347680092], "type": "Point"}, "id": "13", "properties": {"Total Deaths": 0.0, "full place name": "Logo, Benue, Nigeria", "highlight": {}, "style": {}}, "type": "Feature"}, {"bbox": [10.81351, 13.45938969, 10.81351, 13.45938969], "geometry": {"coordinates": [10.81351, 13.45938969], "type": "Point"}, "id": "14", "properties": {"Total Deaths": 18.0, "full place name": "Madagali, Adamawa, Nigeria", "highlight": {}, "style": {}}, "type": "Feature"}, {"bbox": [7.726429900000001, 8.526080132, 7.726429900000001, 8.526080132], "geometry": {"coordinates": [7.726429900000001, 8.526080132], "type": "Point"}, "id": "15", "properties": {"Total Deaths": 1.0, "full place name": "Makurdi, Benue, Nigeria", "highlight": {}, "style": {}}, "type": "Feature"}, {"bbox": [11.65114, 6.247069836, 11.65114, 6.247069836], "geometry": {"coordinates": [11.65114, 6.247069836], "type": "Point"}, "id": "16", "properties": {"Total Deaths": 43.0, "full place name": "Maru, Zamfara, Nigeria", "highlight": {}, "style": {}}, "type": "Feature"}, {"bbox": [5.7533202, 6.327400208, 5.7533202, 6.327400208], "geometry": {"coordinates": [5.7533202, 6.327400208], "type": "Point"}, "id": "17", "properties": {"Total Deaths": 2.0, "full place name": "Ndokwa West, Delta, Nigeria", "highlight": {}, "style": {}}, "type": "Feature"}, {"bbox": [12.36981, 14.21105957, 12.36981, 14.21105957], "geometry": {"coordinates": [12.36981, 14.21105957], "type": "Point"}, "id": "18", "properties": {"Total Deaths": 42.0, "full place name": "Ngala, Borno, Nigeria", "highlight": {}, "style": {}}, "type": "Feature"}, {"bbox": [4.8600302, 7.027890205, 4.8600302, 7.027890205], "geometry": {"coordinates": [4.8600302, 7.027890205], "type": "Point"}, "id": "19", "properties": {"Total Deaths": 1.0, "full place name": "Obio/Akpor, Rivers, Nigeria", "highlight": {}, "style": {}}, "type": "Feature"}, {"bbox": [5.2740102, 7.655350208, 5.2740102, 7.655350208], "geometry": {"coordinates": [5.2740102, 7.655350208], "type": "Point"}, "id": "20", "properties": {"Total Deaths": 2.0, "full place name": "Obot Akara, Akwa Ibom, Nigeria", "highlight": {}, "style": {}}, "type": "Feature"}, {"bbox": [5.3470402, 6.658989906, 5.3470402, 6.658989906], "geometry": {"coordinates": [5.3470402, 6.658989906], "type": "Point"}, "id": "21", "properties": {"Total Deaths": 6.0, "full place name": "Ogba/Egbema/Ndoni, Rivers, Nigeria", "highlight": {}, "style": {}}, "type": "Feature"}, {"bbox": [5.7112598, 6.805809975, 5.7112598, 6.805809975], "geometry": {"coordinates": [5.7112598, 6.805809975], "type": "Point"}, "id": "22", "properties": {"Total Deaths": 2.0, "full place name": "Oguta, Imo, Nigeria", "highlight": {}, "style": {}}, "type": "Feature"}, {"bbox": [6.0513301, 7.210579872, 6.0513301, 7.210579872], "geometry": {"coordinates": [6.0513301, 7.210579872], "type": "Point"}, "id": "23", "properties": {"Total Deaths": 0.0, "full place name": "Orumba North, Anambra, Nigeria", "highlight": {}, "style": {}}, "type": "Feature"}, {"bbox": [6.7430501, 5.350279808, 6.7430501, 5.350279808], "geometry": {"coordinates": [6.7430501, 5.350279808], "type": "Point"}, "id": "24", "properties": {"Total Deaths": 0.0, "full place name": "Ovia South-West, Edo, Nigeria", "highlight": {}, "style": {}}, "type": "Feature"}, {"bbox": [5.4920998, 7.031489849, 5.4920998, 7.031489849], "geometry": {"coordinates": [5.4920998, 7.031489849], "type": "Point"}, "id": "25", "properties": {"Total Deaths": 5.0, "full place name": "Owerri Municipal, Imo, Nigeria", "highlight": {}, "style": {}}, "type": "Feature"}, {"bbox": [7.1943102, 5.587950230000001, 7.1943102, 5.587950230000001], "geometry": {"coordinates": [7.1943102, 5.587950230000001], "type": "Point"}, "id": "26", "properties": {"Total Deaths": 0.0, "full place name": "Owo, Ondo, Nigeria", "highlight": {}, "style": {}}, "type": "Feature"}, {"bbox": [7.9018998, 5.331150055, 7.9018998, 5.331150055], "geometry": {"coordinates": [7.9018998, 5.331150055], "type": "Point"}, "id": "27", "properties": {"Total Deaths": 1.0, "full place name": "Oye, Ekiti, Nigeria", "highlight": {}, "style": {}}, "type": "Feature"}, {"bbox": [4.81394, 7.043690205, 4.81394, 7.043690205], "geometry": {"coordinates": [4.81394, 7.043690205], "type": "Point"}, "id": "28", "properties": {"Total Deaths": 0.0, "full place name": "Port Harcourt, Rivers, Nigeria", "highlight": {}, "style": {}}, "type": "Feature"}, {"bbox": [9.874460200000001, 6.709259987, 9.874460200000001, 6.709259987], "geometry": {"coordinates": [9.874460200000001, 6.709259987], "type": "Point"}, "id": "29", "properties": {"Total Deaths": 14.0, "full place name": "Shiroro, Niger, Nigeria", "highlight": {}, "style": {}}, "type": "Feature"}, {"bbox": [6.3229799, 7.398501873, 6.3229799, 7.398501873], "geometry": {"coordinates": [6.3229799, 7.398501873], "type": "Point"}, "id": "30", "properties": {"Total Deaths": 1.0, "full place name": "Udi, Enugu, Nigeria", "highlight": {}, "style": {}}, "type": "Feature"}, {"bbox": [9.75, 8.717000008, 9.75, 8.717000008], "geometry": {"coordinates": [9.75, 8.717000008], "type": "Point"}, "id": "31", "properties": {"Total Deaths": 0.0, "full place name": "Ughelli North, Delta, Nigeria", "highlight": {}, "style": {}}, "type": "Feature"}, {"bbox": [5.5645399, 5.793630123, 5.5645399, 5.793630123], "geometry": {"coordinates": [5.5645399, 5.793630123], "type": "Point"}, "id": "32", "properties": {"Total Deaths": 1.0, "full place name": "Uvwie, Delta, Nigeria", "highlight": {}, "style": {}}, "type": "Feature"}, {"bbox": [9.26682, 12.447640420000003, 9.26682, 12.447640420000003], "geometry": {"coordinates": [9.26682, 12.447640420000003], "type": "Point"}, "id": "33", "properties": {"Total Deaths": 3.0, "full place name": "Yola South, Adamawa, Nigeria", "highlight": {}, "style": {}}, "type": "Feature"}], "type": "FeatureCollection"},
+            {
+            }
+        ).addTo(map_4cb9bae55b994e08a841e4cc2840c628 );
+        geo_json_733f94e779cf404d939c69b212068fca.setStyle(function(feature) {return feature.properties.style;});
+        
+</script>
